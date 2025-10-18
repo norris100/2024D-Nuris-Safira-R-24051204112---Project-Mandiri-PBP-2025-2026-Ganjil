@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIERRA DARIEN - Fashion Store</title>
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- SALE BANNER -->
+    <div class="sale-banner">
+        <p>WINTER SALE! UP TO 50% OFF</p>
+    </div>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light custom-navbar">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand fw-bold" href="#home">
+                <img src="logo sierra dr.png" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">PRODUCTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="contact.html">CONTACT</a>
+                    </li>
+                </ul>
+                <div class="navbar-icons d-flex align-items-center ms-auto">
+                    <select class="currency-select" id="currencySelect">
+                        <option value="USD">USD</option>
+                        <option value="EUR">EUR</option>
+                        <option value="GBP">IDR</option>
+                    </select>
+                    <button class="nav-btn nav-btn-icon me-2" id="searchBtn" aria-label="Search">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="#000" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path d="M10.5 3a7.5 7.5 0 1 1 0 15 7.5 7.5 0 0 1 0-15zm0 2a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11z"/>
+                            <path d="M20.707 20.293l-4.387-4.387a1 1 0 1 0-1.414 1.414l4.387 4.387a1 1 0 0 0 1.414-1.414z"/>
+                        </svg>
+                    </button>
+                    <button class="nav-btn nav-btn-icon me-2" id="accountBtn" aria-label="Account">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="#000" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"/>
+                            <path d="M4 20a8 8 0 0 1 16 0v1H4v-1z"/>
+                        </svg>
+                    </button>
+                    <button class="nav-btn nav-btn-icon" id="cartBtn" aria-label="Cart">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="#000" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path d="M7 4h-2l-1 2h2l3.6 7.59-1.35 2.45A1 1 0 0 0 9 18h9v-2H10.42a.25.25 0 0 1-.22-.12l.03-.06L11.1 15h5.45a1 1 0 0 0 .95-.68l1.58-5.26A1 1 0 0 0 18.3 8H7.21L6.27 6H7z"/>
+                            <circle cx="10" cy="20" r="1" />
+                            <circle cx="18" cy="20" r="1" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+     <!-- PAGE HEADER -->
+    <section class="page-header text-center">
+        <h1>CONTACT US</h1>
+        <p>We'd love to hear from you</p>
+    </section>
+    <!-- CONTACT -->
+    <section class="contact-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="contact-info">
+                        <div class="info-item">
+                            <h5>Address</h5>
+                            <p>123 Fashion Street, New York, NY 10001</p>
+                            <p>Jl. Sudirman No.45, Jakarta, Indonesia</p>
+                            <p>Damrak 91-95, 1012LM Amsterdam, Netherlands</p>  
+                        </div>
+                        <div class="info-item">
+                            <h5>Phone</h5>
+                            <p>+1 (555) 123-4567</p>
+                            <p>+62 88976012455</p>
+                            <p>+31 20 702 6000</p>
+                        </div>
+                        <div class="info-item">
+                            <h5>Email</h5>
+                            <div class="email-link1">
+                                <a href="#">sierradarienNY@gmail.com</a>
+                            </div>
+                            <div class="email-link2">
+                                <a href="#">sierradarienIDN@gmail.com</a>
+                            </div>
+                            <div class="email-link3">
+                                <a href="#">sierradarienNLD@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <h5>Business Hours</h5>
+                            <p>Monday - Friday: 9:00 AM - 6:00 PM<br>Saturday: 10:00 AM - 4:00 PM<br>Sunday: Closed</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <form id="contactForm" class="contact-form">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                            <small class="error-message" id="nameError"></small>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                            <small class="error-message" id="emailError"></small>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" id="phone" name="phone">
+                            <small class="error-message" id="phoneError"></small>
+                        </div>
+                        <div class="mb-3">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="text" class="form-control" id="subject" name="subject" required>
+                            <small class="error-message" id="subjectError"></small>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                            <small class="error-message" id="messageError"></small>
+                        </div>
+                        <button type="submit" class="btn-submit">SEND MESSAGE</button>
+                        <div id="successMessage" class="alert alert-success mt-3" style="display: none;">
+                            ✓ Your message has been sent successfully! We'll get back to you soon.
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FOOTER -->
+    <hr>
+    <footer class="custom-footer">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-md-3 mb-4">
+                    <h5 class="footer-title">SIERRA DARIEN</h5>
+                    <p class="footer-text">"premium fashion for modern women"</p>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5 class="footer-title">CUSTOMER SERVICE</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5 class="footer-title">FOLLOW US</h5>
+                    <div class="social-links">
+                        <a class="social-link" href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" title="Facebook">
+                            <img class="social-icon" src="https://w7.pngwing.com/pngs/432/247/png-transparent-f-facebook-logo-logos-logos-and-brands-icon.png" alt="Facebook logo">
+                        </a>
+                        <a class="social-link" href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" title="Instagram">
+                            <img class="social-icon" src="https://e7.pngegg.com/pngimages/340/745/png-clipart-computer-icons-white-instagram-icon-text-logo-thumbnail.png" alt="Instagram logo">
+                        </a>
+                        <a class="social-link" href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" title="Twitter / X">
+                            <img class="social-icon" src="https://static.promediateknologi.id/crop/0x0:0x0/0x0/webp/photo/p2/186/2024/06/16/png-transparent-x-logo-new-twitter-logo-4002471811.png" alt="Twitter logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5 class="footer-title">FREE DELIVERY WORLDWIDE</h5>
+                    <p class="footer-text">On orders above $150</p>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="footer-bottom text-center">
+                <p>&copy; 2025 SIERRA DARIEN. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- BUTTON BACK TO TOP -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top" title="Back to top">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M12 5l-7 7h4v7h6v-7h4l-7-7z" fill="#fff"/>
+        </svg>
+    </button>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

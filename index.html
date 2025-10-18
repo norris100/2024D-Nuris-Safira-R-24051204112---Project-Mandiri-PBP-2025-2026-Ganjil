@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIERRA DARIEN - Fashion Store</title>
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- SALE BANNER -->
+    <div class="sale-banner">
+        <p>WINTER SALE! UP TO 50% OFF</p>
+    </div>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light custom-navbar">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand fw-bold" href="#home">
+                <img src="logo sierra dr.png" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#products">PRODUCTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">CONTACT</a>
+                    </li>
+                </ul>
+                <div class="navbar-icons d-flex align-items-center ms-auto">
+                    <select class="currency-select" id="currencySelect">
+                        <option value="USD">USD</option>
+                        <option value="EUR">EUR</option>
+                        <option value="GBP">IDR</option>
+                    </select>
+                    <button class="nav-btn nav-btn-icon me-2" id="searchBtn" aria-label="Search">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="#000" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path d="M10.5 3a7.5 7.5 0 1 1 0 15 7.5 7.5 0 0 1 0-15zm0 2a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11z"/>
+                            <path d="M20.707 20.293l-4.387-4.387a1 1 0 1 0-1.414 1.414l4.387 4.387a1 1 0 0 0 1.414-1.414z"/>
+                        </svg>
+                    </button>
+                    <button class="nav-btn nav-btn-icon me-2" id="accountBtn" aria-label="Account">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="#000" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"/>
+                            <path d="M4 20a8 8 0 0 1 16 0v1H4v-1z"/>
+                        </svg>
+                    </button>
+                    <button class="nav-btn nav-btn-icon" id="cartBtn" aria-label="Cart">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="#000" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path d="M7 4h-2l-1 2h2l3.6 7.59-1.35 2.45A1 1 0 0 0 9 18h9v-2H10.42a.25.25 0 0 1-.22-.12l.03-.06L11.1 15h5.45a1 1 0 0 0 .95-.68l1.58-5.26A1 1 0 0 0 18.3 8H7.21L6.27 6H7z"/>
+                            <circle cx="10" cy="20" r="1" />
+                            <circle cx="18" cy="20" r="1" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- HOME -->
+    <section id="home" class="home-section">
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="gambar SD1.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="gambar SD2 SALE.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="gambar bestsellers SD.png" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <br>
+    <!-- PRODUCTS -->
+    <section id="products" class="products-section py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-4">FEATURED PRODUCTS</h2>
+            <div class="row g-4 justify-content-center">
+                <div class="col-12 col-sm-6 col-md-3 d-flex">
+                    <div class="product-card text-center w-100">
+                        <img src="PRODUCT SD.webp" alt="Product 1" class="product-img mb-3">
+                        <h5 class="product-title">Buttoned Dress With Neckline Bow - Black</h5>
+                        <div class="price mb-3">
+                            <span class="price-sale">$164.99</span>
+                            <span class="price-old">$203.99</span>
+                        </div>
+                        <a href="#" class="btn btn-outline-dark">BUY</a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 d-flex">
+                    <div class="product-card text-center w-100">
+                        <img src="SHOES SD.webp" alt="Product 2" class="product-img mb-3">
+                        <h5 class="product-title">Glossy High-Heels With Pointed Toes - Burgundy</h5>
+                        <div class="price mb-3">
+                            <span class="price-sale">$55.99</span>
+                            <span class="price-old">$75.99</span>
+                        </div>
+                        <a href="#" class="btn btn-outline-dark">BUY</a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 d-flex">
+                    <div class="product-card text-center w-100">
+                        <img src="BOTTOMS SD.webp" alt="Product 3" class="product-img mb-3">
+                        <h5 class="product-title">Leather Straight Leg Stitching - White</h5>
+                        <div class="price mb-3">
+                            <span class="price-sale">$189.99</span>
+                            <span class="price-old">$235.99</span>
+                        </div>
+                        <a href="#" class="btn btn-outline-dark">BUY</a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 d-flex">
+                    <div class="product-card text-center w-100">
+                        <img src="BAGS SD.webp" alt="Product 4" class="product-img mb-3">
+                        <h5 class="product-title">Bag With Shimmering Rhinestone - Silver</h5>
+                        <div class="price mb-3">
+                            <span class="price-sale">$54.99</span>
+                            <span class="price-old">$73.99</span>
+                        </div>
+                        <a href="#" class="btn btn-outline-dark">BUY</a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="#" class="btn view-all-btn">VIEW ALL PRODUCTS</a>
+            </div>
+        </div>
+    </section>
+    <!-- FOOTER -->
+    <hr>
+    <footer class="custom-footer">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-md-3 mb-4">
+                    <h5 class="footer-title">SIERRA DARIEN</h5>
+                    <p class="footer-text">"premium fashion for modern women"</p>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5 class="footer-title">CUSTOMER SERVICE</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5 class="footer-title">FOLLOW US</h5>
+                    <div class="social-links">
+                        <a class="social-link" href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" title="Facebook">
+                            <img class="social-icon" src="https://w7.pngwing.com/pngs/432/247/png-transparent-f-facebook-logo-logos-logos-and-brands-icon.png" alt="Facebook logo">
+                        </a>
+                        <a class="social-link" href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" title="Instagram">
+                            <img class="social-icon" src="https://e7.pngegg.com/pngimages/340/745/png-clipart-computer-icons-white-instagram-icon-text-logo-thumbnail.png" alt="Instagram logo">
+                        </a>
+                        <a class="social-link" href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" title="Twitter / X">
+                            <img class="social-icon" src="https://static.promediateknologi.id/crop/0x0:0x0/0x0/webp/photo/p2/186/2024/06/16/png-transparent-x-logo-new-twitter-logo-4002471811.png" alt="Twitter logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5 class="footer-title">FREE DELIVERY WORLDWIDE</h5>
+                    <p class="footer-text">On orders above $150</p>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="footer-bottom text-center">
+                <p>&copy; 2025 SIERRA DARIEN. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+ <!-- BUTTON BACK TO TOP -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top" title="Back to top">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M12 5l-7 7h4v7h6v-7h4l-7-7z" fill="#fff"/>
+        </svg>
+    </button>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
