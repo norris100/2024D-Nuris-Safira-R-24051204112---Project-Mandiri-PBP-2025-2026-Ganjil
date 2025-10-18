@@ -8,3 +8,6 @@ Website ini terdiri dari 3 menu utama, yaitu Home (index.html) untuk menampilkan
 
 Fungsi interaktif seperti tombol kembali ke atas, validasi form kontak, dan penutupan otomatis navbar di perangkat mobile diatur menggunakan file script.js, sedangkan tampilan visualnya didesain menggunakan styles.css dengan kombinasi warna hangat dan layout modern.
 Website ini dibuat dengan HTML, CSS, Bootstrap, dan JavaScript, sehingga mampu menampilkan tampilan profesional yang mudah diakses di berbagai ukuran layar.
+
+Link video YouTube:
+https://youtu.be/QHhumRxouZ0
